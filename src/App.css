@@ -1,38 +1,146 @@
-.App {
+/* jet brains */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap');
+/*  inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+  --main-bg-color: #252422;
+  --sec-bg-color: #403D39;
+  --solid-bg-color: #EB5E28;
+  --cream-bg-color: #CCC5B9;
+  --clear-bg-color: #FFFCF2;
+  
+}
+
+body{
+  background-color:var(--main-bg-color);
+  font-family:"JetBrains Mono";
+  text-align:center;
+
+}
+
+h1{
+  margin-top: 15%;
+  color:var(--sec-bg-color)
+
+}
+.nav{
+  color:var(--cream-bg-color);
+  list-style:none;
+  font-family: 'JetBrains Mono', sans-serif;
+  text-align: right;
+
+
+}
+.nav li{
+  display: inline;
+  width: 249px;
+  height: 29px;
+  top: 42px;
+  padding: 40px;
+  margin-right: 10px;
+  color:var(--solid-bg-color);
+  
+  
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.nav span{
+ color:var(--cream-bg-color);
+}
+
+
+.bar{
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bar input[type=text]{  
+  background-color:var(--sec-bg-color);
+  width: 30%;
+  padding: 12px 20px 12px 50px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-image: url(https://cdn.iconscout.com/icon/free/png-256/search-2524763-2140475.png);
+  border:0px;
+  background-repeat: no-repeat;
+  font-family: "JetBrains Mono";
+  color:var(--solid-bg-color);
+  background-size: 30px 30px;
+  background-position: 10px 5px; 
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bar input[type=text]:focus {
+  outline: none;
+  
+}
+a{
+  text-decoration: none;
+  color:inherit
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.login{
+  width: 30%;
+  height: 782px;
+  background: #4F4E4C;
+  border-radius: 51px;
+  margin:auto;
 }
 
-.App-link {
-  color: #61dafb;
+.login form{
+  text-align: center;
+  padding-top:10%;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login form input {
+  margin:auto;
+  display:block;
+  margin-top: 17% ;
+  
+
+}
+
+.login .user{
+  background-color:var(--main-bg-color);
+  width: 60%;
+  padding: 12px 20px 12px 50px;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  border:0px;
+  font-family: "JetBrains Mono";
+  color:var(--clear-bg-color);
+  background-size: 30px 30px;
+  background-position: 5px 5px; 
+
+  
+}
+
+.login  .password{
+  background-color:var(--solid-bg-color);
+  width: 60%;
+  padding: 12px 20px 12px 50px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border:0px;
+  font-family: "JetBrains Mono";
+  color:var(--clear-bg-color);
+  background-size: 30px 30px;
+  background-position: 5px 5px; 
+
+}
+.password::placeholder, .user::placeholder{color:white}
+.login input[type=text]:focus {
+  outline: none;
+  
 }
