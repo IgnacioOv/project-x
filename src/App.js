@@ -1,7 +1,8 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import Register from "./components/Register";
 import SearchBar from "./components/SearchBar";
 import Login from "./components/Login";
+import Products from "./components/Products";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -13,7 +14,17 @@ function App() {
           </li>
           <li>
             <span>
-              <Link to="#">register</Link>
+              <Link to="/register">register</Link>
+            </span>
+          </li>
+          <li>
+            <span>
+              <Link to="/">home</Link>
+            </span>
+          </li>
+          <li>
+            <span>
+              <Link to="/favorites">favorites</Link>
             </span>
           </li>
         </ul>
@@ -21,6 +32,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<SearchBar />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/register" element={<Register />}></Route>
+          <Route exact path="/products" element={<Products />}></Route>
         </Routes>
       </div>
     </Router>

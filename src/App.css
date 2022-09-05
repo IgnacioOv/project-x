@@ -88,35 +88,38 @@ a{
 }
 
 
-.login{
+.login, .register{
   width: 30%;
   height: 782px;
   background: #4F4E4C;
   border-radius: 51px;
   margin:auto;
+  
 }
 
-.login form{
+.login form,.register form{
   text-align: center;
-  padding-top:10%;
+  padding:5%;
+  padding-top:30%;
+
   
 }
 
-.login form input {
+.login form input,.register form input {
   margin:auto;
-  display:block;
-  margin-top: 17% ;
+  display:inline;
+  margin-top: 10% ;
+  flex-wrap: wrap;
   
 
 }
 
-.login .user{
+.login .user,.register .user{
   background-color:var(--main-bg-color);
   width: 60%;
   padding: 12px 20px 12px 50px;
   box-sizing: border-box;
   border-radius: 8px;
-
   border:0px;
   font-family: "JetBrains Mono";
   color:var(--clear-bg-color);
@@ -126,7 +129,7 @@ a{
   
 }
 
-.login  .password{
+.login  .password, .register .password{
   background-color:var(--solid-bg-color);
   width: 60%;
   padding: 12px 20px 12px 50px;
@@ -141,6 +144,58 @@ a{
 }
 .password::placeholder, .user::placeholder{color:white}
 .login input[type=text]:focus {
+  outline: none;
+  
+}
+
+.loginBtn,.registerBtn{
+  width: 211px;
+  height: 40px;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-family: "JetBrains Mono";
+  border-radius: 10px;
+  margin-top: 40px;
+  border: 0px;
+  
+}
+
+.accept label input[type="checkbox"]{
+  margin:4%;
+    
+
+}
+
+.accept, input[type="checkbox"] + label {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.bar2{
+  text-align: center;
+  float: right;
+  margin:4%;
+  
+}
+
+.bar2 input[type=text]{  
+  background-color:var(--sec-bg-color);
+  padding: 12px 20px 12px 50px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-image: url(https://cdn.iconscout.com/icon/free/png-256/search-2524763-2140475.png);
+  border:0px;
+  background-repeat: no-repeat;
+  font-family: "JetBrains Mono";
+  color:var(--solid-bg-color);
+  background-size: 30px 30px;
+  background-position: 10px 5px; 
+  
+  
+}
+
+.bar2 input[type=text]:focus {
   outline: none;
   
 }
