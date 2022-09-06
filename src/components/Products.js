@@ -1,11 +1,12 @@
 import Product from "./Product";
-
+import SearchBar from "./SearchBar";
 function Products() {
   return (
     <>
       <div className="bar2">
-        <input type="text" placeholder="buscar"></input>
+        <SearchBar />
       </div>
+
       <div className="products">
         <Product />
       </div>

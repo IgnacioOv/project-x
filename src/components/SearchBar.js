@@ -1,5 +1,6 @@
 import "../App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+//eslint-disable-next-line
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function SearchBar() {
   return (
@@ -8,7 +9,7 @@ function SearchBar() {
       <input type="text" placeholder="buscar producto"></input>
 
       <Link to="/products">
-        <button>go</button>
+        <button>Go</button>
       </Link>
     </div>
   );
