@@ -1,4 +1,5 @@
 import "./App.css";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import Register from "./components/Register";
 import SearchBar from "./components/SearchBar";
 import Login from "./components/Login";
@@ -24,6 +25,9 @@ function App() {
           </li>
           <li>
             <span>
+              <span className="star">
+                <StarBorderOutlinedIcon />
+              </span>
               <Link to="/favorites">favorites</Link>
             </span>
           </li>
